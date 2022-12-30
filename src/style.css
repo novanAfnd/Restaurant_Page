@@ -1,21 +1,22 @@
 @font-face {
   font-family: "Regattia";
   src: url("./regattia-bold-webfont.woff2") format("woff2"), url("./regattia-bold-webfont.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Regattia";
+  background: gray;
 }
 
-.home {
+.main {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
+
   background-color: black;
   width: 100px;
   height: 100px;
