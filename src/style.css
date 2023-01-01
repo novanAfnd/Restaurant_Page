@@ -3,6 +3,8 @@
   src: url("./regattia-bold-webfont.woff2") format("woff2"), url("./regattia-bold-webfont.woff") format("woff");
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +12,30 @@
 }
 
 body {
-  background: gray;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
-.main {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: white;
+header {
+  background: white;
+  width: 100%;
+  height: 50px;
+}
 
-  background-color: black;
-  width: 100px;
-  height: 100px;
+.content {
+  background: gray;
+  margin: 10px;
+}
+
+footer {
+  background: white;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  bottom: 0;
 }
