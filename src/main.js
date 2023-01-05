@@ -1,7 +1,7 @@
 // import
 import "./style.css";
 
-// Header Header Header Header Header Header Header Header Header Header Header
+// Header _____________________________________________________________________________________________________________________________
 const mainHeader = document.createElement("header");
 mainHeader.className = "header";
 const headerNav = document.createElement("nav");
@@ -36,8 +36,21 @@ const HeaderListItems = [
 
 appendChildren(headerList, HeaderListItems);
 
-/* Function for each header list */
-document.getElementById("home").addEventListener("click", function () {
+/* Function switching header list tab */
+const headerBtn = headerNav.getElementsByClassName("header_list_item");
+console.log(headerBtn);
+
+for (var i = 0; i < headerBtn.length; i++) {
+  headerBtn[i].addEventListener("click", function () {
+    const current = document.getElementsByClassName("header_list_item-active");
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" header_list_item-active", "");
+    }
+    this.className += " header_list_item-active";
+  });
+}
+
+/* document.getElementById("home").addEventListener("click", function () {
   alert("Home");
 });
 
@@ -47,14 +60,15 @@ document.getElementById("menu").addEventListener("click", function () {
 
 document.getElementById("contact").addEventListener("click", function () {
   alert("Contact");
-});
+}); */
 
-// Content Content Content Content Content Content Content Content for home, menu and contact
+// Content _____________________________________________________________________________________________________________________________
 const content = document.createElement("div");
 content.className = "content";
+content.id = "content";
 document.body.appendChild(content);
 
-// Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer
+// Footer _____________________________________________________________________________________________________________________________
 const mainFooter = document.createElement("footer");
 mainFooter.className = "footer";
 
