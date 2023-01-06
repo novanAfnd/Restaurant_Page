@@ -1,13 +1,10 @@
-const content = document.getElementById("content");
-content.textContent = "write everyting below";
-
 const homeContentContainer = document.createElement("div");
 homeContentContainer.className = "home_content_container";
 homeContentContainer.textContent = "test...home";
 
-content.appendChild(homeContentContainer);
-
 export function homeActive() {
+  content.appendChild(homeContentContainer);
+
   homeContentContainer.style.display = "block";
 }
 

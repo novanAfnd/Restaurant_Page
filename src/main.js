@@ -1,6 +1,8 @@
 // import
 import "./style.css";
 import { homeActive } from "./home";
+import { menuActive } from "./menu";
+import { contactActive } from "./contact";
 
 // Header _____________________________________________________________________________________________________________________________
 const mainHeader = document.createElement("header");
@@ -42,9 +44,6 @@ appendChildren(headerList, HeaderListItems);
 const headerBtn = headerNav.getElementsByClassName("header_list_item");
 console.log(headerBtn);
 
-const homeContent = document.querySelector(".home_content_container");
-console.log(homeContent);
-
 // Loop through the buttons and add the active class to the current/clicked button
 for (var i = 0; i < headerBtn.length; i++) {
   headerBtn[i].addEventListener("click", function () {
@@ -61,14 +60,27 @@ for (var i = 0; i < headerBtn.length; i++) {
     // jika home button active, maka add home_content_container-active
     if (this.id == "home") {
       console.log("home");
+      homeContent.style.display = "block";
+      menuContent.style.display = "none";
+      contactContent.style.display = "none";
+      //homeActive();
       // panggil function home
       //homeContent.style.display = "blok";
     } else if (this.id == "menu") {
       console.log("menu");
+      homeContent.style.display = "none";
+      menuContent.style.display = "block";
+      contactContent.style.display = "none";
+      //menuActive();
       // panggil function menu
       //menuContent.style.display = "blok";
     } else if (this.id == "contact") {
       console.log("contact");
+      homeContent.style.display = "none";
+      menuContent.style.display = "none";
+      contactContent.style.display = "block";
+
+      //contactActive();
       // panggil function contact
       //contactContent.style.display = "blok";
     }
@@ -84,7 +96,22 @@ for (var i = 0; i < headerBtn.length; i++) {
 const content = document.createElement("div");
 content.className = "content";
 content.id = "content";
+
+content.textContent = "write everyting below";
+
 document.body.appendChild(content);
+
+// must call this first then get element
+homeActive();
+menuActive();
+contactActive();
+
+const homeContent = document.querySelector(".home_content_container");
+const menuContent = document.querySelector(".menu_content_container");
+const contactContent = document.querySelector(".contact_content_container");
+
+menuContent.style.display = "none";
+contactContent.style.display = "none";
 
 // Footer _____________________________________________________________________________________________________________________________
 const mainFooter = document.createElement("footer");

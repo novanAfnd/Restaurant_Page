@@ -87,10 +87,6 @@ body {
   display: none;
 }
 
-.active {
-  display: block;
-}
-
 /* Footer ______________________________________________________________________________________ */
 .footer {
   background: blue;
