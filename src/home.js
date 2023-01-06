@@ -1,8 +1,4 @@
-//... kita mengambil element dengan id "content", karena element dengan id "content" juga memiliki nama class "content"
-//... dan jika kita atur style css hanya untuk classnya yaitu ".content" maka tetap akan bekerja
-//... kalo ingin bukti coba saja console.log
-//... jadi kedepannya bisa kita buat element yang memiliki class dan id
-content = document.getElementById("content");
+const content = document.getElementById("content");
 content.textContent = "write everyting below";
 
 const homeContentContainer = document.createElement("div");
@@ -10,6 +6,15 @@ homeContentContainer.className = "home_content_container";
 homeContentContainer.textContent = "test...home";
 
 content.appendChild(homeContentContainer);
+
+export function homeActive() {
+  homeContentContainer.style.display = "block";
+}
+
+//... kita mengambil element dengan id "content", karena element dengan id "content" juga memiliki nama class "content"
+//... dan jika kita atur style css hanya untuk classnya yaitu ".content" maka tetap akan bekerja
+//... kalo ingin bukti coba saja console.log
+//... jadi kedepannya bisa kita buat element yang memiliki class dan id
 
 // konsep button active dan tidak active
 // saat button untuk home aktif, maka button untuk menu dan contact tidak aktif

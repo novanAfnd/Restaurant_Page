@@ -60,8 +60,7 @@ body {
 /* Content container for home */
 
 .home_content_container {
-  color: white;
-  display: block;
+  display: none;
 }
 
 /* 
@@ -80,18 +79,16 @@ body {
 
 /* Content for menu */
 .menu_content_container {
-  color: white;
   display: none;
-}
-
-.menu_content_container-active {
-  display: block;
 }
 
 /* Content for contact */
 .contact_content_container {
-  color: white;
   display: none;
+}
+
+.active {
+  display: block;
 }
 
 /* Footer ______________________________________________________________________________________ */

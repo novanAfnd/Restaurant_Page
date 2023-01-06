@@ -1,5 +1,6 @@
 // import
 import "./style.css";
+import { homeActive } from "./home";
 
 // Header _____________________________________________________________________________________________________________________________
 const mainHeader = document.createElement("header");
@@ -37,30 +38,47 @@ const HeaderListItems = [
 appendChildren(headerList, HeaderListItems);
 
 /* Function switching header list tab */
+
 const headerBtn = headerNav.getElementsByClassName("header_list_item");
 console.log(headerBtn);
 
+const homeContent = document.querySelector(".home_content_container");
+console.log(homeContent);
+
+// Loop through the buttons and add the active class to the current/clicked button
 for (var i = 0; i < headerBtn.length; i++) {
   headerBtn[i].addEventListener("click", function () {
     const current = document.getElementsByClassName("header_list_item-active");
+
+    // If there is no active class, replace "header_list_item-active" to " " (nothing)
     if (current.length > 0) {
-      current[0].className = current[0].className.replace(" header_list_item-active", "");
+      current[0].className = current[0].className.replace("header_list_item-active", "");
     }
+
+    // Add the active class to the current/clicked button
     this.className += " header_list_item-active";
+
+    // jika home button active, maka add home_content_container-active
+    if (this.id == "home") {
+      console.log("home");
+      // panggil function home
+      //homeContent.style.display = "blok";
+    } else if (this.id == "menu") {
+      console.log("menu");
+      // panggil function menu
+      //menuContent.style.display = "blok";
+    } else if (this.id == "contact") {
+      console.log("contact");
+      // panggil function contact
+      //contactContent.style.display = "blok";
+    }
+
+    // test
+    //console.log(current.length);
+    console.log(this.id);
+    //console.log(homeContent);
   });
 }
-
-/* document.getElementById("home").addEventListener("click", function () {
-  alert("Home");
-});
-
-document.getElementById("menu").addEventListener("click", function () {
-  alert("Menu");
-});
-
-document.getElementById("contact").addEventListener("click", function () {
-  alert("Contact");
-}); */
 
 // Content _____________________________________________________________________________________________________________________________
 const content = document.createElement("div");
@@ -109,6 +127,3 @@ const footerListItems = [
 
 /* Call appendChildren above */
 appendChildren(footerList, footerListItems);
-
-console.log(footerListItems);
-console.log(footerList);
