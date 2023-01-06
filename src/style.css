@@ -63,8 +63,10 @@ body {
   display: none;
 }
 
-/* 
 .content_title {
+  background-color: white;
+  width: 100px;
+  height: 100px;
 }
 
 .content_header {
@@ -75,7 +77,6 @@ body {
 
 .content_location {
 }
- */
 
 /* Content for menu */
 .menu_content_container {

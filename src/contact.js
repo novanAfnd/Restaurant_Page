@@ -4,6 +4,4 @@ contactContentContainer.textContent = "test...contact";
 
 export function contactActive() {
   content.appendChild(contactContentContainer);
-
-  contactContentContainer.style.display = "block";
 }

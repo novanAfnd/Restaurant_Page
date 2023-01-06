@@ -59,7 +59,7 @@ for (var i = 0; i < headerBtn.length; i++) {
 
     // jika home button active, maka add home_content_container-active
     if (this.id == "home") {
-      console.log("home");
+      console.log("home succesfuly called");
       homeContent.style.display = "block";
       menuContent.style.display = "none";
       contactContent.style.display = "none";
@@ -67,7 +67,7 @@ for (var i = 0; i < headerBtn.length; i++) {
       // panggil function home
       //homeContent.style.display = "blok";
     } else if (this.id == "menu") {
-      console.log("menu");
+      console.log("menu succesfuly called");
       homeContent.style.display = "none";
       menuContent.style.display = "block";
       contactContent.style.display = "none";
@@ -75,7 +75,7 @@ for (var i = 0; i < headerBtn.length; i++) {
       // panggil function menu
       //menuContent.style.display = "blok";
     } else if (this.id == "contact") {
-      console.log("contact");
+      console.log("contact succesfuly called");
       homeContent.style.display = "none";
       menuContent.style.display = "none";
       contactContent.style.display = "block";
@@ -87,7 +87,7 @@ for (var i = 0; i < headerBtn.length; i++) {
 
     // test
     //console.log(current.length);
-    console.log(this.id);
+    //console.log(this.id);
     //console.log(homeContent);
   });
 }
@@ -101,15 +101,18 @@ content.textContent = "write everyting below";
 
 document.body.appendChild(content);
 
-// must call this first then get element
+// panggil fungsi ini dulu
 homeActive();
 menuActive();
 contactActive();
 
+// setelah fungsi dipanggil maka masing-masing elemen konten akan muncul
 const homeContent = document.querySelector(".home_content_container");
 const menuContent = document.querySelector(".menu_content_container");
 const contactContent = document.querySelector(".contact_content_container");
 
+// baru kita tetapkan mau dimunculkan apa tidak
+homeContent.style.display = "block";
 menuContent.style.display = "none";
 contactContent.style.display = "none";
 

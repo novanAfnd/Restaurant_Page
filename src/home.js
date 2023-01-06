@@ -2,10 +2,13 @@ const homeContentContainer = document.createElement("div");
 homeContentContainer.className = "home_content_container";
 homeContentContainer.textContent = "test...home";
 
+const homeContentTitle = document.createElement("div");
+homeContentTitle.className = "content_title";
+homeContentTitle.textContent = "Home title";
+
 export function homeActive() {
   content.appendChild(homeContentContainer);
-
-  homeContentContainer.style.display = "block";
+  homeContentContainer.appendChild(homeContentTitle);
 }
 
 //... kita mengambil element dengan id "content", karena element dengan id "content" juga memiliki nama class "content"

@@ -4,6 +4,4 @@ menuContentContainer.textContent = "test...menu";
 
 export function menuActive() {
   content.appendChild(menuContentContainer);
-
-  menuContentContainer.style.display = "block";
 }
