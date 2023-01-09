@@ -63,19 +63,33 @@ body {
   display: none;
 }
 
-.content_title {
-  background-color: white;
-  width: 100px;
-  height: 100px;
+.content_container_inner {
+  background: black;
+  min-width: 100%;
+  min-height: 500px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content_header {
+  font-family: "Regattia";
+  font-size: 50px;
+  text-align: center;
+  margin: 10px;
 }
 
-.content_hours {
+.content_main {
+  text-align: center;
+  width: 400px;
 }
 
-.content_location {
+.content_main h3 {
+  font-family: "Regattia";
+  text-align: center;
+  margin: 10px;
 }
 
 /* Content for menu */
