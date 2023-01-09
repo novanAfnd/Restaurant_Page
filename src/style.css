@@ -15,7 +15,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: white;
-  background: black;
+  background: #18171c;
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -23,7 +23,7 @@ body {
 
 /* Header ______________________________________________________________________________________ */
 .header {
-  background: blue;
+  background: #18171c;
   width: 100%;
   height: 50px;
   display: flex;
@@ -52,19 +52,12 @@ body {
 /* Content ______________________________________________________________________________________ */
 .content {
   background: gray;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 20px;
+  padding: 10px;
 }
 
-/* Content container for home */
-
-.home_content_container {
-  display: none;
-}
-
+/* Inner Content */
 .content_container_inner {
-  background: black;
+  background: #18171c;
   min-width: 100%;
   min-height: 500px;
   border-radius: 10px;
@@ -92,6 +85,50 @@ body {
   margin: 10px;
 }
 
+/* Content container for home */
+
+.home_content_container {
+  display: none;
+}
+
+#home_container_inner {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 20px;
+  grid-template-areas:
+    "header header"
+    "content1 image1"
+    "content2 image1"
+    "location location";
+}
+
+#home_header {
+  grid-area: header;
+}
+
+#home_intro {
+  grid-area: content1;
+}
+
+#image_one {
+  background-image: url(/src/restaurant.jpg);
+  background-size: cover;
+  grid-area: image1;
+  min-width: 500px;
+  min-height: 700px;
+}
+
+#home_hours {
+  grid-area: content2;
+}
+
+#home_location {
+  grid-area: location;
+  width: auto;
+}
+
 /* Content for menu */
 .menu_content_container {
   display: none;
@@ -104,7 +141,7 @@ body {
 
 /* Footer ______________________________________________________________________________________ */
 .footer {
-  background: blue;
+  background: #18171c;
   width: 100%;
   height: 50px;
   padding-left: 40px;
