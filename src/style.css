@@ -55,14 +55,14 @@ body {
   padding: 10px;
 }
 
-/* Inner Content */
+/* Inner Content container */
 .content_container_inner {
   background: #18171c;
   min-width: 100%;
   min-height: 500px;
   border-radius: 10px;
   padding: 10px;
-  display: flex;
+  display: flex; /* Important */
   flex-direction: column;
   align-items: center;
 }
@@ -85,7 +85,7 @@ body {
   margin: 10px;
 }
 
-/* Content container for home */
+/* Content container for home ______________________________________________________________________________________ */
 
 .home_content_container {
   display: none;
@@ -129,12 +129,26 @@ body {
   width: auto;
 }
 
-/* Content for menu */
+/* Content container Content for menu ______________________________________________________________________________________ */
 .menu_content_container {
   display: none;
 }
 
-/* Content for contact */
+.menu_content_submenu_container {
+  background: blue;
+  width: 400px;
+  min-height: 400px;
+  margin: 10px;
+}
+
+.menu_content_submenu_container h3 {
+  font-family: "Regattia";
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+}
+
+/* Content container Content for contact ______________________________________________________________________________________ */
 .contact_content_container {
   display: none;
 }
