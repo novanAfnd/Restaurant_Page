@@ -74,9 +74,19 @@ export function menuActive() {
   menuContentInner.appendChild(subMenuFoods);
   const foodItems = [
     createEverythingInsideFoods(
-      "Nasi Goreng - Rp15k",
-      "https://images.tokopedia.net/img/JFrBQq/2022/8/9/886e7849-85fb-42c0-95dc-0a1839234615.jpg",
-      "Nasi goreng adalah makanan berupa nasi yang digoreng dan diaduk dalam minyak goreng atau margarin, biasanya ditambah bahan-bahan lain seperti telur, daging, seafood, atau sayuran. "
+      "Nasi Goreng Telur Ceplok - Rp15k",
+      "https://riceinfo.com/wp-content/uploads/2022/09/nasi-goreng-recipe.jpg",
+      "Nasi goreng is a Southeast Asian fried rice dish, usually cooked with pieces of meat and vegetables."
+    ),
+    createEverythingInsideFoods(
+      "Nasi Goreng Ayam Geprek - Rp20k",
+      "https://img.kurio.network/QcOouz8wPgj4U46wpi-6ttfADgw=/320x320/filters:quality(80)/https://kurio-img.kurioapps.com/21/12/17/d6b0125d-cba9-414a-99aa-35cb3cfd83fc.jpe",
+      "Fried rice with crispy fried chicken topped with chili sauce."
+    ),
+    createEverythingInsideFoods(
+      "Nasi Goreng Mawut - Rp15k",
+      "https://tastynesia.com/wp-content/uploads/2019/12/Resep-Nasi-Goreng-Mawut.jpg",
+      "Fried rice mixed with noodles or fried vermicelli. Complete with vegetable toppings and shredded chicken/sausage/meatballs."
     ),
   ];
 
@@ -88,7 +98,17 @@ export function menuActive() {
     createEverythingInsideFoods(
       "Jus Buah Mangga - Rp10k",
       "https://cdn0-production-images-kly.akamaized.net/4qLTaXdMn0jfg9tV6ZJJp-SKKZ0=/261x0:928x667/1200x1200/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3267542/original/055688000_1602674093-shutterstock_1045397923.jpg",
-      "Nasi goreng adalah makanan berupa nasi yang digoreng dan diaduk dalam minyak goreng atau margarin, biasanya ditambah bahan-bahan lain seperti telur, daging, seafood, atau sayuran. "
+      "Mango juice is made from ripe mangoes."
+    ),
+    createEverythingInsideFoods(
+      "Teh Susu - Rp10k",
+      "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c06eb3cf-f1e1-4e10-8ca0-d80995506e3e_Go-Biz_20200930_152745.jpeg",
+      "A mixture of tea and milk in a certain composition. Milk tea is a modern drink that is very popular and this milk tea has its own characteristics in its manufacture, especially in Asia."
+    ),
+    createEverythingInsideFoods(
+      "Es Teh - Rp5k",
+      "https://bebekbkb.com/storage/2020/02/es-teh-manis.jpg",
+      "A tea drink that is served cold with ice cubes."
     ),
   ];
 
@@ -100,7 +120,12 @@ export function menuActive() {
     createEverythingInsideFoods(
       "Usus Krispi - Rp5k",
       "https://paxelmarket.co/wp-content/uploads/2022/01/Screenshot_20220109_173115.png",
-      "Nasi goreng adalah makanan berupa nasi yang digoreng dan diaduk dalam minyak goreng atau margarin, biasanya ditambah bahan-bahan lain seperti telur, daging, seafood, atau sayuran. "
+      "Usus Krispi is chips made from quality selected raw chicken intestines. These chips are processed using an extraordinary technique that involves a variety of 'Indonesian special' spices to produce chips that are savory, delicious, soft, crunchy like never before."
+    ),
+    createEverythingInsideFoods(
+      "Krupuk Kulit - Rp5k",
+      "https://cdn0-production-images-kly.akamaized.net/szcT3TR2gBo-DimULAauJazz6GI=/261x0:4422x4161/1200x1200/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3764835/original/080039900_1640058116-shutterstock_1820787197.jpg",
+      "Krupuk kulit is a traditional Indonesian cattle skin krupuk. Traditionally it is made from the soft inner skin of cattle, diced, and sun-dried until it hardens and loses most of its water content."
     ),
   ];
 
