@@ -25,11 +25,7 @@ function createHeaderList(liClass, liId, liText) {
 }
 
 /* Function to add list to header or footer ul */
-function appendChildren(parent, children) {
-  children.forEach(function (child) {
-    parent.appendChild(child);
-  });
-}
+//....move below
 
 const HeaderListItems = [
   createHeaderList("header_list_item", "home", "Home"),
@@ -135,6 +131,14 @@ function createAnchorInsideList(aClass, aHref, aText) {
   return li;
 }
 
+/* Function to add list to header or footer ul */
+function appendChildren(parent, children) {
+  children.forEach(function (child) {
+    parent.appendChild(child);
+  });
+}
+
+/* Call createAnchorInsideList above */
 const footerListItems = [
   createAnchorInsideList(
     "footer_list_item",

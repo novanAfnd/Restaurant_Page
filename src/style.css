@@ -135,16 +135,42 @@ body {
 }
 
 .menu_content_submenu_container {
-  background: blue;
-  width: 400px;
+  background: gray;
+  min-width: 400px;
   min-height: 400px;
+  border-radius: 10px;
   margin: 10px;
 }
 
 .menu_content_submenu_container h3 {
   font-family: "Regattia";
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
+  margin: 10px;
+}
+
+.food-drink_container {
+  text-align: center;
+  background: #18171c;
+  width: 400px;
+  min-height: 400px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.food-drink_name {
+  font-family: "Regattia";
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+.food-drink_image {
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
   margin: 10px;
 }
 
