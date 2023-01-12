@@ -52,7 +52,8 @@ body {
 /* Content ______________________________________________________________________________________ */
 .content {
   background: gray;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Inner Content container */
@@ -60,7 +61,6 @@ body {
   background: #18171c;
   min-width: 100%;
   min-height: 500px;
-  border-radius: 10px;
   padding: 10px;
   display: flex; /* Important */
   flex-direction: column;
@@ -179,6 +179,61 @@ body {
   display: none;
 }
 
+#contact_content_inner {
+}
+
+.contact_content_profile_container {
+  min-width: 500px;
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact_content_profile_card {
+  background: gray;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_content_profile_card p {
+  text-align: center;
+}
+
+.contact_content_profile_card_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.contact_content_profile_card_name {
+  font-family: "Regattia";
+  font-size: 25px;
+  margin: 10x;
+}
+
+#profile_dipper {
+  background: url(./dipper.png);
+  background-size: cover;
+}
+
+#profile_wendy {
+  background: url(./wendy.png);
+  background-size: cover;
+}
+
+#profile_mabel {
+  background: url(./mabel.png);
+  background-size: contain;
+}
+
 /* Footer ______________________________________________________________________________________ */
 .footer {
   background: #18171c;
@@ -216,4 +271,28 @@ body {
 .footer_list_item:hover {
   color: orange;
   cursor: pointer;
+}
+
+/* Media queries*/
+@media all and (max-width: 768px) {
+  #home_container_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home_header {
+    font-size: 45px;
+  }
+
+  #image_one {
+    min-width: 400px;
+    min-height: 600px;
+  }
+
+  .footer_list_item {
+    font-size: 10px;
+    font-weight: 400;
+  }
 }

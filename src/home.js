@@ -3,7 +3,7 @@ homeContentContainer.className = "home_content_container";
 
 const homeContentInner = document.createElement("div");
 homeContentInner.className = "content_container_inner";
-homeContentInner.id = "home_container_inner";
+homeContentInner.id = "home_container_inner"; // to make grids work
 
 // Header
 const homeHeader = document.createElement("div");
